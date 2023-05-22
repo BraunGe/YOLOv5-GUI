@@ -1,0 +1,24 @@
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+
+train: mydata/images/train  # train images (relative to 'path') 128 images
+val: mydata/images/val  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+nc: 201
+# Classes
+names: ['pl80', 'p6', 'ph4.2', 'w14', 'pa13', 'im', 'w58', 'pl90', 'il70', 'p5', 'pm55', 'pl60', 'ip', 'p11', 'pdd', 'wc', 'i2r', 'w30', 'pmr', 'p23', 'pl15', 'pm10', 'pss', 'w1', 'p4', 'w38', 'w50', 
+'w34', 'pw3.5', 'iz', 'p1n', 'pr70', 'pg', 'ph5.3', 'w66', 'il80', 'pb', 'pbm', 'pm5', 'w24', 'w49', 'pm40', 'ph4', 'w45', 'i4', 'w37', 'ph2.6', 'pl70', 'ph5.5', 'i14', 'i11', 'p7', 'p29', 'pne', 'pr60', 
+'pm13', 'ph4.5', 'p12', 'p3', 'pl5', 'w13', 'pr10', 'p14', 'i4l', 'pr30', 'pw4.2', 'w16', 'p17', 'ph3', 'w15', 'w35', 'pa8', 'pt', 'pr45', 'pl30', 'pcs', 'pctl', 'pr50', 'ph4.4', 'pm46', 'pm35', 'i15', 
+'pa12', 'pclr', 'i1', 'pcd', 'pbp', 'pcr', 'w28', 'ps', 'pm8', 'w18', 'ph2.9', 'ph1.8', 'p20', 'p10', 'pn', 'pa14', 'ph3.2', 'p2', 'ph2.5', 'w62', 'w55', 'pw3', 'pw4.5', 'i12', 'ph4.3', 'phclr', 'i10', 
+'pr5', 'i13', 'w10', 'p26', 'w26', 'p8', 'w5', 'w42', 'il50', 'p13', 'pr40', 'p25', 'w41', 'pl20', 'ph4.8', 'pnlc', 'ph3.3', 'ph2.1', 'pm30', 'p24', 'p21', 'pl40', 'pmb', 'pc', 'pr20', 'p18', 'ph3.8', 
+'pm50', 'pm25', 'i2', 'w22', 'w47', 'w56', 'pl120', 'ph2.8', 'w12', 'pm1.5', 'pm2.5', 'w32', 'pm15', 'ph5', 'pw3.2', 'pw2.5', 'pl10', 'il60', 'w57', 'w48', 'w60', 'pl100', 'pr80', 'p16', 'pl110', 'w59',
+'w20', 'ph2', 'p9', 'il100', 'w31', 'ph2.4', 'pr100', 'p19', 'ph3.5', 'pa10', 'pcl', 'pl35', 'p15', 'pa6', 'phcs', 'w43', 'p28', 'w3', 'pl25', 'il110', 'p1', 'w46', 'pn-2', 'w44', 'w63', 'pm20', 'w8', 
+'pmblr', 'i5', 'il90', 'w21', 'p27', 'pl50', 'pl65', 'ph2.2', 'pm2', 'i3', 'pa18', 'pw4']
